@@ -24,13 +24,13 @@ def gc_content_features(sequences):
         })
     return features
 
-def global_descriptor_features(sequences, alphabet="ACGU"):
+def global_descriptor_features(sequences, alphabet="ACGT"):
     """
     Computes global descriptor features: composition, transitions, and distribution.
 
     Args:
         sequences (list of str): List of RNA sequences.
-        alphabet (str): Set of allowed characters (default: ACGU).
+        alphabet (str): Set of allowed characters (default: ACGT).
 
     Returns:
         list of dict: One feature dict per sequence.

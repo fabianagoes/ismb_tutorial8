@@ -1,6 +1,6 @@
 from itertools import product
 from collections import OrderedDict
-
+import numpy as np
 def generate_kmer_features(sequences, kmax, alphabet="ACGT"):
     """
     Generates k-mer frequency features from a list of sequences.
@@ -39,18 +39,17 @@ def generate_kmer_features(sequences, kmax, alphabet="ACGT"):
     
     return all_features
 
-import numpy as np
 
 def one_hot_encode_sequences(sequences, alphabet="ACGT"):
     """
-    Converts a list of sequences into one-hot encoded numpy arrays.
+    One-hot encode sequences and flatten each one.
 
     Args:
-        sequences (list of str): List of sequences (all same length recommended).
-        alphabet (str): Alphabet used for encoding (default: "ACGT").
+        sequences (list of str): Input sequences.
+        alphabet (str or list): Valid characters.
 
     Returns:
-        np.ndarray: 3D array of shape (num_sequences, seq_length, alphabet_size)
+        np.ndarray: Array of shape (num_sequences, seq_len * len(alphabet))
     """
     char_to_index = {char: idx for idx, char in enumerate(alphabet)}
     seq_len = max(len(seq) for seq in sequences)
@@ -61,7 +60,8 @@ def one_hot_encode_sequences(sequences, alphabet="ACGT"):
         for j, char in enumerate(seq.upper()):
             if char in char_to_index:
                 one_hot[i, j, char_to_index[char]] = 1
-            # else it remains zero (unknown character or padding)
 
-    return one_hot
+    # Flatten each sequence: (seq_len, len(alphabet)) -> (seq_len * len(alphabet))
+    one_hot_flat = one_hot.reshape(num_seqs, -1)
+    return one_hot_flat
 
