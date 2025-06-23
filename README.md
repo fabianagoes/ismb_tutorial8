@@ -16,6 +16,7 @@ To use colab simply click on the links below and run the cells. Each cell has re
 If you wish to keep a copy of the repo locally
 
 > open terminal
+
 > git clone https://github.com/fabianagoes/ismb_tutorial8.git
 
 # Practical 1
