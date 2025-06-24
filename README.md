@@ -5,7 +5,7 @@ This tutorial focuses on learning various ways to represent sequences for machin
 #### Schedule
 Official schedule for this tutorial can be found [here](https://www.iscb.org/ismbeccb2025/programme-agenda/tutorials#ip8).
 
-#### Course Instructors
+#### Speakers
 - Fabiana Goes, The Rosalind Franklin Institute
 - Aparajita Karmakar, The University of Edinburgh and The Rosalind Franklin Institute
 
