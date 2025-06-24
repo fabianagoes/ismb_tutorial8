@@ -1,12 +1,19 @@
-## About IP8
+## ISMB 2025 Tutorial IP8 on "Representation Learning and Feature Engineering for Genomic Sequences Analysis"
 
 This tutorial focuses on learning various ways to represent sequences for machine learning applications. Practical 1 focuses on traditional representations such as numeric mappings and sequence composition features while Practical 2 focuses on embeddings techniques for large language models (LLMs).
+
+#### Schedule
+Official schedule for this tutorial can be found [here](https://www.iscb.org/ismbeccb2025/programme-agenda/tutorials#ip8).
+
+#### Course Instructors
+- Fabiana Goes, The Rosalind Franklin Institute
+- Aparajita Karmakar, The University of Edinburgh and The Rosalind Franklin Institute
 
 ## Getting ready for IP8
 ### What would you need?
 
-- gmail account (to access google colaboratory). Google colaboratory lets you write and execute Python code in your browser, with access to GPUs and TPUs.
-- github account  and [git bash](https://git-scm.com/downloads) (to save the codebase locally).
+- Gmail account (to access google colaboratory). Google colaboratory lets you write and execute Python code in your browser, with access to GPUs and TPUs.
+- Github account  and [git bash](https://git-scm.com/downloads) (to save the codebase locally).
 
 ### Running on Google Colab
 
