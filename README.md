@@ -9,6 +9,10 @@ Official schedule for this tutorial can be found [here](https://www.iscb.org/ism
 - Fabiana Goes, The Rosalind Franklin Institute
 - Aparajita Karmakar, The University of Edinburgh and The Rosalind Franklin Institute
 
+#### Slides
+- Lecture: Exploring Traditional Feature Engineering in Genomics [📁 slides](/slides/Part1_Representation_Learning_for_Nucleic_Acid_Sequences.pdf)
+- Lecture: Decoding the Genomic Language — Representation Learning for Genomic Sequences [📁 slides](/slides/Part2_Representation_Learning_Embeddings.pdf)
+  
 ## Getting ready for IP8
 ### What would you need?
 
